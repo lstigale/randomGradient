@@ -1,6 +1,7 @@
 body {
  height: 100vh;
 }
+
 .center {
   display: flex;
   align-content: center;
@@ -9,14 +10,13 @@ body {
   text-align: center;
   margin: auto;
   margin-top: 20vh;
-  width: 210px;
+  width: 240px;
 
   border: 1px;
   border-radius: 25px;
 
   background-color: rgba(255, 255, 255, .2);
 }
-
 
 .button {
   margin: auto;
@@ -31,4 +31,22 @@ body {
   margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+/* Timer animation */
+
+.timer {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  -webkit-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
 }

@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Gradient</title>
-    <script type="text/javascript" src="gradient.js"></script>
-    <link rel="stylesheet" href="gradient.css">
-  </head>
-  <body onload="randomGradient()">
-<div class="center">
-    <h1>New Gradient every refresh</h1>
-    <div><h3>Gradient Code:</h3></div>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Gradient</title>
+  <script type="text/javascript" src="gradient.js"></script>
+  <link rel="stylesheet" href="gradient.css">
+</head>
+
+<body onload="randomGradient()">
+  <script>
+    setInterval(randomGradient, 5000);
+  </script>
+
+  <div class="center">
+    <h1>New Gradient every 5 seconds</h1>
+    <img class="timer" src="timer.png" alt="Timer image">
+    <div>
+      <h3>Gradient Code:</h3></div>
     <div id="colorNum" class="colNum"></div>
-</div>
-  </body>
+  </div>
+</body>
+
 </html>
